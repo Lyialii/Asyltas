@@ -3,85 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ASYLTAS — Эксклюзивные изделия из акрилового камня в Астане</title>
+    <title>ASYLTAS | Эксклюзивные изделия из акрилового камня в Астане</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
-        /* Базовые настройки и шрифты */
+        /* Ультра-премиум стили */
         * { box-sizing: border-box; margin: 0; padding: 0; scroll-behavior: smooth; }
-        body { font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif; background-color: #0b0f17; color: #f3f4f6; line-height: 1.6; }
+        body { font-family: 'Manrope', sans-serif; background-color: #06090e; color: #f3f4f6; line-height: 1.6; -webkit-font-smoothing: antialiased; }
         
-        /* Контейнер */
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
 
-        /* Премиальная шапка */
-        header { background: rgba(11, 15, 23, 0.95); backdrop-filter: blur(10px); position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
-        .nav-box { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; }
-        .logo { font-size: 1.6em; font-weight: 900; letter-spacing: 3px; color: #fff; text-transform: uppercase; }
-        .logo span { color: #d4af37; }
-        nav a { color: #9ca3af; text-decoration: none; margin-left: 25px; font-size: 0.9em; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; transition: 0.3s; }
+        /* Стеклянная шапка */
+        header { background: rgba(6, 9, 14, 0.75); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid rgba(255, 255, 255, 0.03); }
+        .nav-box { display: flex; justify-content: space-between; align-items: center; padding: 24px 0; }
+        .logo { font-size: 1.8em; font-weight: 800; letter-spacing: 4px; color: #fff; text-transform: uppercase; }
+        .logo span { color: #d4af37; text-shadow: 0 0 15px rgba(212, 175, 55, 0.4); }
+        nav a { color: #9ca3af; text-decoration: none; margin-left: 30px; font-size: 0.85em; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; transition: 0.3s; }
         nav a:hover { color: #d4af37; }
 
-        /* Роскошный Главный экран (Hero) */
-        .hero { padding: 140px 0 100px 0; text-align: center; position: relative; background: radial-gradient(circle at center, #1e2638 0%, #0b0f17 70%); }
-        .hero-badge { display: inline-block; padding: 6px 16px; background: rgba(212, 175, 55, 0.1); border: 1px solid #d4af37; color: #d4af37; font-size: 0.8em; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; border-radius: 50px; margin-bottom: 25px; }
-        .hero h1 { font-size: 3.5em; font-weight: 800; tracking: -1px; margin-bottom: 20px; color: #fff; line-height: 1.2; }
-        .hero p { font-size: 1.3em; color: #9ca3af; max-width: 800px; margin: 0 auto 40px auto; font-weight: 300; }
+        /* Роскошный главный экран */
+        .hero { padding: 160px 0 120px 0; text-align: center; position: relative; background: radial-gradient(circle at 50% 30%, #161f33 0%, #06090e 65%); overflow: hidden; }
+        .hero-badge { display: inline-block; padding: 6px 18px; background: rgba(212, 175, 55, 0.07); border: 1px solid rgba(212, 175, 55, 0.3); color: #d4af37; font-size: 0.75em; font-weight: 600; text-transform: uppercase; letter-spacing: 3px; border-radius: 50px; margin-bottom: 30px; }
+        .hero h1 { font-size: 4em; font-weight: 800; letter-spacing: -1px; margin-bottom: 25px; color: #fff; line-height: 1.15; }
+        .hero p { font-size: 1.35em; color: #9ca3af; max-width: 750px; margin: 0 auto 45px auto; font-weight: 300; }
 
-        /* Общие стили секций */
-        section { padding: 100px 0; }
-        .section-title { text-align: center; margin-bottom: 60px; }
-        .section-title h2 { font-size: 2.5em; font-weight: 700; color: #fff; letter-spacing: 1px; }
-        .section-title p { color: #d4af37; font-size: 0.9em; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px; }
+        /* Секции */
+        section { padding: 120px 0; }
+        .section-title { text-align: center; margin-bottom: 70px; }
+        .section-title h2 { font-size: 2.8em; font-weight: 800; color: #fff; letter-spacing: -0.5px; }
+        .section-title p { color: #d4af37; font-size: 0.85em; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 12px; font-weight: 600; }
 
-        /* Сетка услуг (Улучшенные карточки) */
-        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
-        .card { background: #111622; border: 1px solid rgba(255,255,255,0.03); border-radius: 16px; padding: 40px 30px; transition: all 0.4s ease; position: relative; overflow: hidden; }
-        .card::before { content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: #d4af37; transform: scaleY(0); transition: 0.3s; }
-        .card:hover { transform: translateY(-10px); background: #161d2d; border-color: rgba(212, 175, 55, 0.2); }
-        .card:hover::before { transform: scaleY(1); }
-        .card h3 { font-size: 1.5em; color: #fff; margin-bottom: 15px; font-weight: 600; }
-        .card p { color: #9ca3af; font-size: 0.95em; }
+        /* Сетка премиум-карточек */
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 35px; }
+        .card { background: rgba(255, 255, 255, 0.01); border: 1px solid rgba(255, 255, 255, 0.04); border-radius: 24px; padding: 50px 35px; transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); position: relative; }
+        .card:hover { transform: translateY(-8px); background: rgba(255, 255, 255, 0.03); border-color: rgba(212, 175, 55, 0.3); box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
+        .card h3 { font-size: 1.6em; color: #fff; margin-bottom: 18px; font-weight: 600; }
+        .card p { color: #9ca3af; font-size: 0.95em; font-weight: 300; }
 
-        /* Этапы работы */
-        .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 25px; }
-        .step-item { background: #111622; padding: 30px; border-radius: 12px; text-align: center; position: relative; }
-        .step-num { font-size: 2.5em; font-weight: 900; color: rgba(212, 175, 55, 0.15); position: absolute; top: 10px; right: 20px; }
-        .step-item h4 { font-size: 1.2em; color: #fff; margin-bottom: 10px; z-index: 2; position: relative; }
-        .step-item p { color: #9ca3af; font-size: 0.9em; }
+        /* Шаги производства */
+        .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px; }
+        .step-item { background: rgba(255, 255, 255, 0.01); padding: 40px 30px; border-radius: 20px; text-align: center; position: relative; border: 1px solid rgba(255, 255, 255, 0.02); }
+        .step-num { font-size: 3em; font-weight: 800; color: rgba(212, 175, 55, 0.08); position: absolute; top: 15px; right: 25px; }
+        .step-item h4 { font-size: 1.25em; color: #fff; margin-bottom: 12px; font-weight: 600; }
+        .step-item p { color: #9ca3af; font-size: 0.9em; font-weight: 300; }
 
-        /* Премиум Галерея портфолио */
-        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 25px; }
-        .gallery-card { background: #111622; border-radius: 16px; overflow: hidden; border: 1px solid rgba(255,255,255,0.03); transition: 0.3s; }
-        .gallery-box { width: 100%; height: 280px; overflow: hidden; position: relative; }
-        .gallery-box img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
-        .gallery-card:hover img { transform: scale(1.08); }
-        .gallery-info { padding: 20px; background: #111622; border-top: 1px solid rgba(255,255,255,0.03); }
-        .gallery-info h5 { font-size: 1.1em; color: #fff; margin-bottom: 5px; }
-        .gallery-info p { color: #d4af37; font-size: 0.85em; font-weight: 500; }
+        /* Арт-галерея */
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 30px; }
+        .gallery-card { background: rgba(255, 255, 255, 0.01); border-radius: 24px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.03); transition: 0.4s; }
+        .gallery-box { width: 100%; height: 300px; overflow: hidden; }
+        .gallery-box img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+        .gallery-card:hover img { transform: scale(1.05); }
+        .gallery-info { padding: 24px; background: #0b0f17; }
+        .gallery-info h5 { font-size: 1.15em; color: #fff; margin-bottom: 6px; font-weight: 600; }
+        .gallery-info p { color: #d4af37; font-size: 0.85em; font-weight: 600; letter-spacing: 1px; }
 
-        /* Эксклюзивный блок призыва (CTA) */
-        .cta-section { background: linear-gradient(135deg, #161d2d, #111622); border-radius: 24px; padding: 60px 40px; text-align: center; border: 1px solid rgba(212, 175, 55, 0.1); margin-top: 50px; }
-        .cta-section h2 { font-size: 2.2em; color: #fff; margin-bottom: 15px; }
-        .cta-section p { color: #9ca3af; max-width: 600px; margin: 0 auto 35px auto; }
+        /* Золотая кнопка с анимацией свечения */
+        .btn-gold { 
+            display: inline-block; 
+            background: #d4af37; 
+            color: #06090e; 
+            padding: 20px 50px; 
+            text-decoration: none; 
+            font-size: 1em; 
+            font-weight: 800; 
+            border-radius: 12px; 
+            letter-spacing: 1px; 
+            text-transform: uppercase;
+            transition: all 0.3s ease; 
+            box-shadow: 0 4px 30px rgba(212, 175, 55, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-gold:hover { 
+            background: #fff; 
+            transform: translateY(-3px); 
+            box-shadow: 0 10px 40px rgba(212, 175, 55, 0.4); 
+        }
 
-        /* Профессиональные кнопки */
-        .btn-gold { display: inline-block; background: #d4af37; color: #0b0f17; padding: 18px 45px; text-decoration: none; font-size: 1.05em; font-weight: 700; border-radius: 8px; letter-spacing: 0.5px; transition: all 0.3s ease; box-shadow: 0 4px 20px rgba(212, 175, 55, 0.25); }
-        .btn-gold:hover { background: #f3cb46; transform: translateY(-2px); box-shadow: 0 6px 25px rgba(212, 175, 55, 0.4); }
+        /* Блок призыва к действию */
+        .cta-section { background: radial-gradient(ellipse at top right, #161f33, #0b0f17); border-radius: 32px; padding: 80px 40px; text-align: center; border: 1px solid rgba(212, 175, 55, 0.15); margin-top: 80px; }
+        .cta-section h2 { font-size: 2.5em; color: #fff; margin-bottom: 20px; font-weight: 800; }
+        .cta-section p { color: #9ca3af; max-width: 650px; margin: 0 auto 40px auto; font-size: 1.1em; font-weight: 300; }
 
         /* Подвал */
-        footer { background: #070a10; padding: 40px 0; border-top: 1px solid rgba(255, 255, 255, 0.03); text-align: center; color: #6b7280; font-size: 0.9em; }
-        footer p span { color: #d4af37; }
+        footer { background: #030508; padding: 50px 0; border-top: 1px solid rgba(255, 255, 255, 0.02); text-align: center; color: #4b5563; font-size: 0.85em; letter-spacing: 0.5px; }
+        footer p span { color: #d4af37; font-weight: 600; }
 
-        /* Адаптивность для мобильных */
+        /* Адаптивность */
         @media (max-width: 768px) {
-            .hero h1 { font-size: 2.4em; }
-            nav { display: none; } /* Скрываем меню на мобилках для чистоты */
-            .section-title h2 { font-size: 1.9em; }
+            .hero h1 { font-size: 2.6em; }
+            nav { display: none; }
+            .section-title h2 { font-size: 2em; }
+            .cta-section h2 { font-size: 1.8em; }
         }
     </style>
 </head>
 <body>
 
-    <!-- Шапка -->
+    <!-- Навигация -->
     <header>
         <div class="container nav-box">
             <div class="logo">ASYLTAS<span>.</span></div>
@@ -96,10 +116,10 @@
     <!-- Главный экран -->
     <section class="hero">
         <div class="container">
-            <div class="hero-badge">Собственное производство в Астане</div>
-            <h1>Безупречность в каждом миллиметре камня</h1>
-            <p>Создаем премиальные бесшовные столешницы, раковины и подоконники из сертифицированного акрила. Без посредников и переплат салонам.</p>
-            <a href="https://wa.me/77761405554" target="_blank" class="btn-gold">Обсудить проект в WhatsApp</a>
+            <div class="hero-badge">Архитектурный акриловый камень</div>
+            <h1>Искусство бесшовных интерьерных решений</h1>
+            <p>Эксклюзивное производство монументальных столешниц, моек и элементов декора в Астане. Абсолютная монолитность без видимых стыков.</p>
+            <a href="https://wa.me/77761405554" target="_blank" class="btn-gold">Рассчитать стоимость</a>
         </div>
     </section>
 
@@ -107,53 +127,53 @@
     <section id="services">
         <div class="container">
             <div class="section-title">
-                <p>Направления работы</p>
-                <h2>Что мы создаем</h2>
+                <p>Безупречное исполнение</p>
+                <h2>Направления производства</h2>
             </div>
             <div class="grid-3">
                 <div class="card">
-                    <h3>Кухонные столешницы</h3>
-                    <p>Идеально гладкие поверхности без единого видимого стыка. Устойчивы к бактериям, влаге и легки в уходе.</p>
+                    <h3>Кухонные плоскости</h3>
+                    <p>Столешницы сложной геометрии с интегрированными бортиками. Стопроцентная влагостойкость и благородная шелковистая текстура.</p>
                 </div>
                 <div class="card">
-                    <h3>Интегрированные мойки</h3>
-                    <p>Раковины, которые монолитно переходят в столешницу. Никакого скопления грязи под кантиками — абсолютная гигиеничность.</p>
+                    <h3>Монолитные раковины</h3>
+                    <p>Раковины и раковины-столешницы, отлитые воедино. Отсутствие швов исключает появление налета, плесени и потемнений.</p>
                 </div>
                 <div class="card">
-                    <h3>Подоконники и стойки</h3>
-                    <p>Элегантные подоконники любых форм (включая эркерные) и дизайнерские барные стойки для дома или бизнеса.</p>
+                    <h3>Эркеры и подоконники</h3>
+                    <p>Массивные подоконники, плавно переходящие в столы или зоны отдыха. Устойчивы к ультрафиолету и перепадам температур.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Раздел Процесса -->
-    <section id="steps" style="background: #111622; background: radial-gradient(circle at bottom, #161d2d 0%, #0b0f17 100%);">
+    <section id="steps" style="background: radial-gradient(circle at center, #0b0f17 0%, #06090e 100%); border-top: 1px solid rgba(255,255,255,0.01); border-bottom: 1px solid rgba(255,255,255,0.01);">
         <div class="container">
             <div class="section-title">
-                <p>Этапы реализации</p>
-                <h2>Как мы работаем</h2>
+                <p>Стандарты качества</p>
+                <h2>Эволюция вашего проекта</h2>
             </div>
             <div class="steps">
                 <div class="step-item">
                     <div class="step-num">01</div>
-                    <h4>Точный замер</h4>
-                    <p>Мастер выезжает на объект с образцами камня для идеального подбора текстуры.</p>
+                    <h4>3D-Замер</h4>
+                    <p>Высокоточный лазерный замер пространства и презентация оригинальных каталогов камня.</p>
                 </div>
                 <div class="step-item">
                     <div class="step-num">02</div>
-                    <h4>Договор</h4>
-                    <p>Фиксируем честную цену напрямую от цеха и точные сроки сдачи изделия.</p>
+                    <h4>Проектирование</h4>
+                    <p>Разработка технологической карты изделия, утверждение сметы и сроков.</p>
                 </div>
                 <div class="step-item">
                     <div class="step-num">03</div>
-                    <h4>Производство</h4>
-                    <p>Вытачиваем и склеиваем изделие на профессиональном оборудовании.</p>
+                    <h4>Кастинг и Склейка</h4>
+                    <p>Ювелирная обработка швов по бесшовной технологии на автоматизированных станках.</p>
                 </div>
                 <div class="step-item">
                     <div class="step-num">04</div>
-                    <h4>Монтаж</h4>
-                    <p>Доставляем, устанавливаем и проводим финальную полировку до зеркального блеска.</p>
+                    <h4>Монтаж и Финиш</h4>
+                    <p>Чистая установка изделия на объекте и глубокая многоступенчатая полировка камня.</p>
                 </div>
             </div>
         </div>
@@ -163,57 +183,56 @@
     <section id="portfolio">
         <div class="container">
             <div class="section-title">
-                <p>Реализованные проекты</p>
-                <h2>Наши работы в Астане</h2>
+                <p>Реализовано в Астане</p>
+                <h2>Галерея наших работ</h2>
             </div>
             <div class="gallery">
                 <div class="gallery-card">
                     <div class="gallery-box">
-                        <img src="6df7e315-7e40-46ba-aff5-57cb4a4f107c.jpg" alt="Кухонная столешница из акрила">
+                        <img src="6df7e315-7e40-46ba-aff5-57cb4a4f107c.jpg" alt="Премиальная столешница">
                     </div>
                     <div class="gallery-info">
-                        <h5>Эксклюзивная кухонная зона</h5>
-                        <p>Материал: Акриловый камень</p>
+                        <h5>Интегрированная кухонная зона</h5>
+                        <p>Акриловый монолит</p>
                     </div>
                 </div>
                 <div class="gallery-card">
                     <div class="gallery-box">
-                        <img src="dce606f9-9b7e-42af-8cf8-c0faf425f1b1.jpg" alt="Интегрированная раковина">
+                        <img src="dce606f9-9b7e-42af-8cf8-c0faf425f1b1.jpg" alt="Раковина из акрила">
                     </div>
                     <div class="gallery-info">
-                        <h5>Монолитная раковина в ванную</h5>
-                        <p>Материал: Бесшовный акрил</p>
+                        <h5>Бесшовная раковина в ванную</h5>
+                        <p>Индивидуальный дизайн</p>
                     </div>
                 </div>
                 <div class="gallery-card">
                     <div class="gallery-box">
-                        <img src="f9a00717-3fe0-48b6-9cf0-aaee80b7c7b7.jpg" alt="Подоконник из камня">
+                        <img src="f9a00717-3fe0-48b6-9cf0-aaee80b7c7b7.jpg" alt="Подоконник">
                     </div>
                     <div class="gallery-info">
-                        <h5>Эркерный подоконник</h5>
-                        <p>Материал: Премиум акрил</p>
+                        <h5>Эркерный радиусный подоконник</h5>
+                        <p>Премиум сегмент</p>
                     </div>
                 </div>
             </div>
 
             <!-- Блок призыва -->
             <div class="cta-section">
-                <h2>Рассчитайте стоимость вашего изделия</h2>
-                <p>Отправьте нам примерные размеры или готовый эскиз. Мы сделаем расчет стоимости напрямую от производства за 30 минут.</p>
-                <a href="https://wa.me/77761405554" target="_blank" class="btn-gold">Рассчитать проект в WhatsApp</a>
+                <h2>Создайте каменный шедевр</h2>
+                <p>Пришлите нам эскиз, чертеж или просто размеры. Наш инженер сделает точный расчет стоимости изделия напрямую от фабрики за 30 минут.</p>
+                <a href="https://wa.me/77761405554" target="_blank" class="btn-gold">Консультация в WhatsApp</a>
             </div>
         </div>
     </section>
 
-    <!-- Подвал сайта -->
+    <!-- Подвал -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 <span>ASYLTAS</span>. Все права защищены. Изготовление изделий из искусственного камня в Астане.</p>
+            <p>&copy; 2026 <span>ASYLTAS</span>. Высокая культура обработки искусственного камня в Астане. Все права защищены.</p>
         </div>
     </footer>
 
-    <!-- Место для кода твоего чат-бота (Re:plain или любого другого) -->
-    <!-- Сюда вставь скопированную строчку <script>...</script> из Телеграма -->
+    <!-- Место для кода чат-бота (Re:plain / Smartsupp) -->
 
 </body>
 </html>
